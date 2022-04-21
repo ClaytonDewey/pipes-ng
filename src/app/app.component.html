@@ -55,4 +55,18 @@
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="form-group col mb-4">
+            <label>Miles</label>
+            <input class="form-control" (input)="onMilesChange($any($event.target).value)">
+        </div>
+
+        <div class="col">
+            <label><b>Kilometers</b></label>
+            <div>
+                {{ miles | number: '1.0-3' }}
+            </div>
+        </div>
+    </div>
 </div>
